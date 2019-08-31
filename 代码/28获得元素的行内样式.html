@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script>
+			window.onload=function(){
+				//给按钮加单击事件
+				document.getElementById("btn").onclick=function(){
+					//获得行内样式的宽度
+					//注意：元素.style.css只能获取行内样式
+					/*var w=document.getElementById("hd").style.width;
+					alert(w);*/
+					//设置css样式   margin-top则改成驼峰=====marginTop
+					document.getElementById("hd").style.width='500px';
+				}
+			}
+		</script>
+	</head>
+	<body>
+		<input type="button" value="点我啊" id="btn" />
+		<div id="hd" style="width:300px;height:260px;background: red;margin:0 auto;">
+			
+		</div>
+	</body>
+</html>

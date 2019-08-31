@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script>
+			window.onload=function(){
+				//通过id抓取样式
+				document.getElementById("one").style.color='red';
+				//通过id抓取的元素只有一个
+				//通过class、name和标签名抓的元素会以数组的形式返回
+				//通过class抓取元素
+				//var re=document.getElementsByClassName('ls');
+				//通过name属性抓元素
+				//var re=document.getElementsByName("hd");
+				//通过标签名抓元素
+				var re=document.getElementsByTagName('p');
+				//document.getElementById("box").document.getElementsByClassName('hd');
+				for(var i=0;i<re.length;i++)
+				{
+					re[i].style.color='blue';
+				}
+				
+			}
+		</script>
+	</head>
+	<body>
+		<p>后盾人 人人做后盾0</p>
+		<p id="one">后盾人 人人做后盾1</p>
+		<p name='hd'>后盾人 人人做后盾2</p>
+		<p class='ls'>后盾人 人人做后盾3</p>
+		<p class='ls'>后盾人 人人做后盾4</p>
+		<p name='hd'>后盾人 人人做后盾5</p>
+		<p class='ls'>后盾人 人人做后盾6</p>
+		<p>后盾人 人人做后盾7</p>
+		
+	</body>
+</html>

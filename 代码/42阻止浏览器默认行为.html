@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script>
+			window.onload=function(){
+				document.getElementById("link").onclick=function(e){
+					alert("点击了");
+//					var ev=window.event || e;
+//					if(document.all){
+//						ev.returnValue=false;
+//					}
+//					else{
+//						ev.preventDefault();
+//					}
+				}
+				
+			}
+		</script>
+	</head>
+	<body>
+		<a href="javascript:void(0);" id='link'>百度</a>
+		<!--<a href="http://baidu.com" id='link'>百度</a>
+		<form action="">
+			<input type="text" />
+		</form>-->
+	</body>
+</html>

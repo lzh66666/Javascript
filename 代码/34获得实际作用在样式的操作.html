@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			#hd{
+				width:500px;
+				height:200px;
+				background:red;
+				margin-top:123px;
+			}
+		</style>
+		<script>
+			window.onload=function(){
+				var hd=document.getElementById("hd");
+				//alert(hd.style.width);
+				if(document.all)
+				{
+					//var w=hd.currentStyle.width;
+					//var w=hd.currentStyle.marginTop;
+					var w=hd.currentStyle.backgroundColor;
+				}
+				else{
+					//var w=getComputedStyle(hd,null).width;
+					//var w=getComputedStyle(hd,null).marginTop;
+					var w=getComputedStyle(hd,null).backgroundColor;
+				}
+				alert(w);
+			}
+		</script>
+	</head>
+	<body>
+		<div id="hd"></div>
+	</body>
+</html>

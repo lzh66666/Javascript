@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			#hd{
+				width:300px;
+				height:500px;
+				background:green;
+				margin:0 auto;
+			}
+		</style>
+		<script>
+			//addEventListener是W3C，标准，不支持ie低版本
+			//第一个参数事件前不加on
+			//不会被覆盖？？？？？？？？？？
+			//判断浏览器
+			if(document.all){//低版本ie
+				//低版本ie
+			window.onload=function(){
+				document.getElementById("hd").attachEvent('onclick',function(){
+					alert('低版本ie才能触发！！！！！');
+				})
+			}
+			}
+			else//w3c
+			{
+				window.onload=function(){
+				document.getElementById("hd").addEventListener('click',function(){
+					alert('w3c触发！！！！');
+				})
+			}
+			}
+			
+			
+		</script>
+	</head>
+	<body>
+		<div id="hd">
+			
+		</div>
+	</body>
+</html>

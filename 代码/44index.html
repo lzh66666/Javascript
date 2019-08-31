@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			*{
+				padding: 0;
+				margin: 0;
+			}
+			img{
+				float: left;
+				width: 200px;
+				height: 150px;
+				margin: 15px;
+			}
+		</style>
+		<script>
+			window.onload=function(){
+				//抓到所有图片
+				var imgs=document.getElementsByTagName('img');
+				//循环所有的图片，给每张图片加单机事件
+				for(var i=0;i<imgs.length;i++){
+					//给i号图片添加一个变量
+					imgs[i].xuhao=i;
+					//给i号图片加单击事件
+					imgs[i].onclick=function(){
+						//alert('点我干啥！');
+						//this.style.display='none';
+						//this.style.visibility='hidden';
+						alert(this.xuhao);
+					}
+				}	
+			}
+			
+		</script>
+	</head>
+	<body>
+		<!--img[src=img/$.jpg]*7-->
+		<img src="img/1.jpg" alt="" />
+		<img src="img/2.jpg" alt="" />
+		<img src="img/3.jpg" alt="" />
+		<img src="img/4.jpg" alt="" />
+		<img src="img/5.jpg" alt="" />
+		<img src="img/6.jpg" alt="" />
+		<img src="img/7.jpg" alt="" />
+	</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script>
+			function pgsj(){
+				this.color='土豪金';
+				this.price='8000元';
+				this.size='5.5寸';
+				this.weight='200g';
+				this.chat=function(){
+					alert('能聊天');
+				};
+				this.call=function(){
+					alert('能打电话');
+				}
+			};
+			var iphone9 = new pgsj();
+			//内容的修改和增加
+			iphone9.color='黄色';
+			iphone9.huo='点火';
+			
+			document.write(iphone9.color);
+			document.write(iphone9.huo);
+		</script>
+	</head>
+	<body>
+	</body>
+</html>

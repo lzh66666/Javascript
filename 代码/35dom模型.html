@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			
+		</style>
+		
+		<script>
+			window.onload=function(){
+				var hd=document.getElementById("hd");
+				var one=document.getElementById("one");
+				//抓取所有的节点          空格和换行也属于节点
+				//var re=hd.childNodes;
+				//alert(re.length);
+				//re[3].style.color='red';
+				//抓到one的父级节点
+				//one.parentNode.style.color='red';
+				//获得第一个节点
+				//hd.firstChild.style.color='red';
+				//获最后一个节点
+				//hd.lastChild.style.color='red';
+				//兄弟节点的下一个
+				//one.nextSibling.style.color='red';
+				//抓取兄弟节点的上一个节点
+				one.previousSibling.style.color='red';
+			}
+		</script>
+	</head>
+	<body>
+		<div id="hd"><h2>后盾人人 人做后盾0</h2><h2 id='one'>后盾人人 人做后盾1</h2><h2>后盾人人 人做后盾2</h2><h2>后盾人人 人做后盾3</h2><h2>后盾人人 人做后盾4</h2><h2>后盾人人 人做后盾5</h2><h2>后盾人人 人做后盾6</h2><h2>后盾人人 人做后盾7</h2></div>
+	</body>
+</html>

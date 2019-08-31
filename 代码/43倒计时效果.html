@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		
+		<title></title>
+		<script>
+			window.onload=function(){
+				//创建倒计时函数
+				function djs(){
+					//创建当前时间
+					var new_time=new Date();
+					//创建未来时间
+					var fur_time=new Date(2019,11,31,23,0,0);
+					//计算两个时间差
+					var diff=fur_time.getTime()-new_time.getTime();
+					//alert(diff);
+					var tian=parseInt(diff/(24*60*60*1000));
+					//获得计算完天数后剩余的毫秒数
+					diff=diff%(24*60*60*1000);
+					//计算小时
+					var xiaoshi=parseInt(diff/(60*60*1000));
+					//alert(hour);
+					//获得计算完小时后剩余的毫秒数
+					diff=diff%(60*60*1000);
+					//计算分钟
+					var fen=parseInt(diff/(60*1000));
+					//alert(fen);
+					//计算完分钟后剩余的毫秒数
+					diff=diff%(60*1000);
+					//计算秒钟
+					var miao=parseInt(diff/(1000));
+					//document.write("距离年底还剩余"+tian+"天"+xiaoshi+"小时"+fen+"分钟"+miao+"秒钟");
+					var ss=document.getElementById("time").getElementsByTagName('span');
+					ss[0].innerHTML=tian;
+					ss[1].innerHTML=xiaoshi;
+					ss[2].innerHTML=fen;
+					ss[3].innerHTML=miao;
+				}
+				//除去刷新时的一秒时间差
+				djs();
+				//用来倒计时的定时器
+				setInterval(djs,1000);
+			}
+				
+			
+		</script>
+	</head>
+	
+	<body>
+		<h1 id='time'>距离年底还剩<span>0</span>天<span>0</span>小时<span>0</span>分钟<span>0</span>秒</h1>
+	</body>
+</html>

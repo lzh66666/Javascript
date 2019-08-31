@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script>
+			//用基本语法创建函数
+			//var sanjiao=function()
+			function sanjiao(){
+				for(var i=0;i<=5;i++){
+					for(var j=0;j<=i;j++){
+						document.write("❤");
+					}
+					document.write("<br />");
+				}
+			}
+			sanjiao();
+			//自调用
+			(function hd(){
+				alert('后盾人');
+			})()
+		</script>
+	</head>
+	<body>
+	</body>
+</html>

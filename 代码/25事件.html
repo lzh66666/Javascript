@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			#hd{
+				width:300px;
+				height:500px;
+				background:green;
+				margin:0 auto;
+			}
+		</style>
+		
+		<script>
+			/*
+			 1、事件触发条件
+			 2、事件源
+			 3、事件处理程序
+			 */
+			//需要用js操作body里的元素的时候需要用window.onload
+			window.onload=function(){
+				//抓到id是hd的元素，然后绑定单击事件
+				//单击事件
+				/*document.getElementById("hd").onclick=function(){
+					alert('后盾人，人人做后盾');
+				};*/
+				//双击事件
+				/*document.getElementById("hd").ondblclick=function(){
+					alert('后盾人，人人做后盾');
+				}*/
+				//鼠标按下事件
+				/*document.getElementById("hd").onmousedown=function(){
+					alert('后盾人，人人做后盾');
+				}*/
+				//鼠标抬起事件
+				/*document.getElementById("hd").onmouseup=function(){
+					alert('后盾人，人人做后盾');
+				}*/
+				//鼠标移入事件
+				/*document.getElementById("hd").onmouseover=function(){
+					alert('后盾人，人人做后盾');
+				}*/
+				//鼠标移动事件
+				/*document.getElementById("hd").onmousemove=function(){
+					alert('后盾人，人人做后盾');
+				}*/
+				//鼠标移出事件
+				document.getElementById("hd").onmouseout=function(){
+					alert('后盾人，人人做后盾');
+				}
+			}
+			
+		</script>
+	</head>
+	<body>
+		<div id="hd">
+			
+		</div>
+	</body>
+</html>

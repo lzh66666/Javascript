@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script>
+//			var timer=setInterval(function(){
+//				alert('你好！');
+//			},2000);
+//			setTimeout(function(){
+//				clearInterval(timer);
+//			},5000);
+			//停止定时炸弹
+			var timer=setTimeout(function (){
+				alert("boom~~~~~~~~~~");
+			},5000);
+			setTimeout(function (){
+				clearTimeout(timer);
+				alert('报告长官，炸弹清理掉了');
+			},3000);
+		</script>
+	</head>
+	<body>
+	</body>
+</html>

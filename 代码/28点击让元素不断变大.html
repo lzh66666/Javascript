@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			#hd{
+				
+				height:300px;
+				background:red;
+				margin:0 auto;
+			    border: solid green 5px;
+			    overflow: hidden;
+			}
+		</style>
+		
+		<script>
+			
+			window.onload=function(){
+				//抓元素
+				hd=document.getElementById("hd");
+				btn=document.getElementById("btn");
+				//给按钮加单机样式
+				btn.onclick=function(){
+					//获得元素当前的宽度
+					var old_width=hd.style.width;
+					//计算新的宽度值
+					var new_width=parseInt(old_width)+10;
+					//将新的宽度值赋回元素
+					hd.style.width=new_width+'px';
+				}
+			}
+		</script>
+	</head>
+	<body>
+		<input type="button" value="点我啊" id="btn"/>
+		<div id="hd"style="width:300px;"></div>
+	</body>
+</html>

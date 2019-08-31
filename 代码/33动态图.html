@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			#pic{
+				width:200px;
+				height:200px;
+			}
+		</style>
+		
+		<script>
+			window.onload=function(){
+				var pic=document.getElementById("pic");
+				var btn=document.getElementById("btn");
+				var p=1;
+				var m=1;
+				btn.onclick=function(){
+					setInterval(function(){
+						//p++;
+						p=p+m;
+						pic.setAttribute('src','img/'+p+'.jpg');
+						/*if(p==7){
+							p=0;
+						}*/
+						//p=(p==7)?1:p;
+						if(p==7){
+							m=-1;
+						}
+						else if(p==1){
+							m=1;
+						}
+					},100)
+				}
+			}
+		</script>
+	</head>
+	<body>
+		<input type="button" value='点我啊'  id='btn' />
+		<br /><br />
+		<img src="img/1.jpg" id='pic'/>
+	</body>
+</html>

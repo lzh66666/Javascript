@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script>
+			
+			var str='houdunren后盾人后盾人后盾人';
+			//获得字符串的长度（中文算一个字符）
+			
+			//document.write(str.length);
+			//charAt(i)表示获取第i个字符
+			//var re=str.charAt(3);
+			//document.write(re);
+			 
+			 //chariCodeAt获得对应字符的Unicode编码
+			//var re=str.charCodeAt(3);
+			//document.write(re);
+			
+			//String.fromCharCode是将Unicode编码换成原始编码
+//			var re=String.fromCharCode(100);
+//			document.write(re);
+//			获得字符串第一次出现的地方indexOf
+//			var re=str.indexOf('u');
+			//获得字符串最后一次出现的地方
+//			var re=str.lastIndexOf('u');
+//			document.write(re);
+
+			//match查找是否有字符串
+//			var re=str.match('nr');
+//			if(re){
+//				document.write("找到了");
+//			}
+//			else
+//			{
+//				document.write("没找到");
+//			}
+			//replace替换元素，默认只替换第一个
+			while(str.match('后盾人')){
+				str=str.replace('后盾人','*****');
+			}
+			
+			document.write(str);
+			//截取字符串slice(3,6)从第3个开始截取到第5个
+//			var re=str.slice(3,6);
+//			document.write(re);
+			//字符串的截取substr(n,m)从n开始截取m个字符串
+//			var re=str.substr(3,3);
+//			document.write(re);
+			
+		</script>
+	</head>
+	<body>
+	</body>
+</html>

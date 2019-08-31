@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			#hd{
+				width:500px;
+				height:300px;
+				background:red;
+				margin:100px;
+				position: relative;
+			}
+		</style>
+			
+		<script>
+			window.onload=function(){
+				var hd=document.getElementById("hd");
+				hd.onclick=function(e){
+					//window.event是低版本id浏览器的事件对象
+					var ev = window.event || e;
+					//获得鼠标和可视区域之间的距离
+					//alert(ev.clientX);
+					//alert(ev.clientY);
+					//获得鼠标和当前区域之间的距离
+					//alert(ev.offsetX);//低版本ie的写法
+					var l=ev.offsetX || ev.layerX;
+					alert(l);
+				}
+			}
+		</script>
+	</head>
+	<body>
+		<div id="hd">
+			
+		</div>
+	</body>
+</html>

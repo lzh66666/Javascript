@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			.hd{
+				background:blue;
+				color:white;
+			}
+		</style>
+		<script>
+			//在js中,字符之间不能有换行
+			var rows=prompt("请输入行数:");
+			var clos=prompt("请输入列数:");
+			document.write("<table border='1'>");
+			for(var i=1;i<=rows;i++)
+			{
+				if(i%2==0){
+					document.write("<tr class='hd'>");
+				}
+				else{
+					document.write("<tr >");
+				}
+				
+				for(var j=1;j<=clos;j++)
+				{
+					document.write("<td>"+i+"行"+j+"列</td>");
+				}
+				document.write("</tr>");
+				
+			}
+			
+			
+			
+			document.write("</table>")
+		</script>
+	</head>
+	<body>
+		
+	</body>
+</html>
