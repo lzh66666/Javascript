@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			#hd{
+				width:300px;
+				height:300px;
+				background:red;
+				position:absolute;
+				top:30px;
+			}
+		</style>
+		
+		<script>
+			
+			window.onload=function(){
+				var speed=10;
+				//抓元素
+				var hd=document.getElementById("hd");
+				var btn=document.getElementById("btn");
+				
+				//给按钮加单机样式
+				btn.onclick=function(){
+					//设置定时器，每隔一秒钟，将left的值变大10个像素
+					var timer=setInterval(function(){
+						//获得当前图片的left值：
+						var old_left=hd.style.left;
+						//计算新的left值
+						var new_left=parseInt(old_left)+speed;
+						//将新值赋值回去
+						hd.style.left=new_left+'px';
+						//加速跑
+						speed++;
+					},40)
+				}
+			}
+		</script>
+	</head>
+	<body>
+		<input type="button" value="点我啊" id="btn"/>
+		<div id="hd"style="left:0px;"></div>
+	</body>
+</html>

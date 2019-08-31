@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script>
+			//用来存储houdunwang的数组
+			var re=[];
+			var str='后盾视屏下载地址www.houdunwang.com视屏教程bbs.houdunwang.com官方网站bbs.houdunwang.com下载地址houdunwang.com';
+			//var re=str.indexOf('houdunwang');
+			//document.write(re);
+			while(str.match('houdunwang'))
+			{
+				var index=str.indexOf('houdunwang');
+				//第一次出现位置压入数组
+				re.push(index);
+				//将元素换成等长的字符串
+				str=str.replace('houdunwang','**********');
+			}
+			document.write(re);
+		</script>
+	</head>
+	<body>
+	</body>
+</html>

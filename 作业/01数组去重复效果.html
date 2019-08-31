@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		
+		<script>
+			
+			function qcf(arr){
+				for(var i=0;i<arr.length;i++)
+				{
+					for(var j=i+1;j<arr.length;j++)
+					{
+						if(arr[i]==arr[j])
+						{
+							arr.splice(j,1);
+							j--;
+						}
+					}
+				}
+				return arr;
+			}
+			
+			var shuzu=['a','b','b','c','a','a','a','d','c','d','e','f','e'];
+		    var re=qcf(shuzu);
+		    document.write(re);
+		    
+		</script>
+	</head>
+	<body>
+	</body>
+</html>

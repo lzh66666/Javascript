@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script>
+			window.onload=function(){
+				var btn=document.getElementById("btn");
+				var ditu=document.getElementById("ditu");
+				var sta=1;//1对应图片的显示状态
+				btn.onclick=function(){
+					if(sta==1)
+					{
+						ditu.style.display='none';
+						sta=0;
+					}
+					else if(sta==0){
+						ditu.style.display='block';
+						sta=1;
+					}
+					
+				}
+			}
+		</script>
+	</head>
+	<body>
+		<input type="button" id="btn" value="点我啊" />
+		
+		<br /><br /><br />
+		<img src="../../lu3.png" id="ditu"/>
+		
+	</body>
+</html>
